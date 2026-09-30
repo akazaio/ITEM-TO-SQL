@@ -19,6 +19,16 @@
 
 **TBL to SQL Studio** is a native C++17 / Win32 desktop application that converts Knight Online `Item_Org` and `Item_Ext` table data into ready-to-execute `USKO_ITEM.sql` files. Built for private server developers who need to quickly import or update item data in their SQL Server databases.
 
+## 📥 Quick Download
+
+> **Just want the exe? Download directly:**
+
+| File | Architecture | Description |
+|------|:---:|-------------|
+| **[`TBLtoSQLStudio_x64.exe`](dist/TBLtoSQLStudio_x64.exe)** | x64 | Pre-built 64-bit executable |
+
+Click the filename → then click **"Download raw file"** button on the next page.
+
 ## ✨ Features
 
 | Feature | Description |
