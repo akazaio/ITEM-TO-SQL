@@ -1,0 +1,21 @@
+name: build
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  windows-x64:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Configure
+        run: cmake -S . -B build -A x64
+      - name: Build
+        run: cmake --build build --config Release --parallel
+      - name: Upload executable
+        uses: actions/upload-artifact@v4
+        with:
+          name: TBLtoSQLStudio-x64
+          path: build/Release/TBLtoSQLStudio.exe

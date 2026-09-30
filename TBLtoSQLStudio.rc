@@ -1,0 +1,37 @@
+#include <windows.h>
+#include "resources/resource.h"
+
+IDI_APP_ICON ICON "resources\\tbltosql.ico"
+1 RT_MANIFEST "resources\\app.manifest"
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,1,0,0
+ PRODUCTVERSION 1,1,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "TBL to SQL Studio\0"
+            VALUE "FileDescription", "TBL to SQL Studio - USKO ITEM Builder\0"
+            VALUE "FileVersion", "1.1.0\0"
+            VALUE "InternalName", "TBLtoSQLStudio.exe\0"
+            VALUE "OriginalFilename", "TBLtoSQLStudio.exe\0"
+            VALUE "ProductName", "TBL to SQL Studio\0"
+            VALUE "ProductVersion", "1.1.0\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x0409, 1200
+    END
+END
